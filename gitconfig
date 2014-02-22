@@ -1,0 +1,60 @@
+[include]
+	path = ~/.dotfiles/.config
+
+[core]
+	editor = "subl -n -w"
+
+[color]
+	ui = true
+
+[color "branch"]
+	current = blue bold
+	local   = white bold
+	remote  = red bold
+
+[color "status"]
+	added     = green bold
+	changed   = red bold
+	untracked = blue bold
+	deleted   = white bold
+
+[alias]
+	st   = status -sb
+	sti  = status -sb --ignored
+
+	r    = reset
+	r1   = reset HEAD^
+	r2   = reset HEAD^^
+	rh   = reset --hard
+	rh1  = reset HEAD^ --hard
+	rh2  = reset HEAD^^ --hard
+
+	a    = add
+	aa   = add .
+
+	rmr  = rm -r
+	rmrf = rm -rf
+
+	c    = commit
+	cm   = commit -m
+	ca   = commit --amend
+	cma  = commit --amend -m
+
+	cl   = clone
+	co   = checkout
+	br   = branch
+
+	sl   = stash list
+	sa   = stash apply
+	ss   = stash save
+
+	ls   = log --pretty=format:'%C(yellow)%h %C(blue)%ad%C(green)%d %C(reset)%s%C(red) [%cn]' --decorate --date=short --numstat
+
+	# Toggle ignoring changes to tracked files. Used for temporary
+	# modifications that do not need to be committed.
+	sic  = update-index --assume-unchanged
+	nic  = update-index --no-assume-unchanged
+	lic  = !git ls-files -v | grep ^h
+
+[push]
+	default = simple
