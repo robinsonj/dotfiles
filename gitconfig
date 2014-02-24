@@ -1,5 +1,5 @@
 [include]
-	path = ~/.dotfiles/.config
+	path = ~/.dotfiles/.gitsecrets
 
 [core]
 	editor = "subl -n -w"
@@ -32,6 +32,9 @@
 	a    = add
 	aa   = add .
 
+	d    = diff --word-diff --color-words
+	di   = diff
+
 	rmr  = rm -r
 	rmrf = rm -rf
 
@@ -39,6 +42,7 @@
 	cm   = commit -m
 	ca   = commit --amend
 	cma  = commit --amend -m
+	cam  = cma
 
 	cl   = clone
 	co   = checkout
@@ -48,13 +52,14 @@
 	sa   = stash apply
 	ss   = stash save
 
-	ls   = log --pretty=format:'%C(yellow)%h %C(blue)%ad%C(green)%d %C(reset)%s%C(red) [%cn]' --decorate --date=short --numstat
+	lg   = log --pretty=format:'%C(yellow)%h %C(blue)%ad%C(green)%d%Creset %s %C(reset)%C(red)[%cn]%Creset' --color --decorate=short --date=short --abbrev-commit --graph
+	ls   = log --pretty=format:'%C(yellow)%h %C(blue)%ad%C(green)%d% C(red)[%cn]%Creset%n%C(bold)%s%Creset%n%+b' --color --decorate=short --stat
 
 	# Toggle ignoring changes to tracked files. Used for temporary
 	# modifications that do not need to be committed.
 	sic  = update-index --assume-unchanged
 	nic  = update-index --no-assume-unchanged
-	lic  = !git ls-files -v | grep ^h
+	lic  = !git ls-files -v | grep ^h | cut -c 3-
 
 [push]
 	default = simple
