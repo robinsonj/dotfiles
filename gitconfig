@@ -4,6 +4,9 @@
 [core]
 	editor = "subl -n -w"
 
+[push]
+	default = simple
+
 [color]
 	ui = true
 
@@ -12,7 +15,10 @@
 	local   = white bold
 	remote  = red bold
 
+[color "diff"]
+
 [color "status"]
+	header    = black bold
 	added     = green bold
 	changed   = red bold
 	untracked = blue bold
@@ -60,6 +66,3 @@
 	sic  = update-index --assume-unchanged
 	nic  = update-index --no-assume-unchanged
 	lic  = !git ls-files -v | grep ^h | cut -c 3-
-
-[push]
-	default = simple
