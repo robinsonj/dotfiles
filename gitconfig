@@ -25,6 +25,8 @@
 	deleted   = white bold
 
 [alias]
+	sc   = !git config -l | grep alias | cut -c 7-
+
 	st   = status -sb
 	sti  = status -sb --ignored
 
