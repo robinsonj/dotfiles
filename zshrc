@@ -2,7 +2,7 @@
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 ### Prompt config. RPOMPT is right-justified on the prompt line.
-PROMPT='%1~ > '
+PROMPT='%1~ $ '
 RPROMPT='%*'
 
 ### Aliases
