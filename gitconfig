@@ -65,7 +65,8 @@
 	ls   = log --pretty=format:'%C(yellow)%h %C(blue)%ad%C(green)%d% C(red)[%cn]%Creset%n%C(bold)%s%Creset%n%+b' --color --decorate=short --stat
 
 	# follow up
-	fup  = !git ls --since '2 days ago'
+	fup  = log --pretty=format:'%C(yellow)%h %C(blue)%ad%C(green)%d% C(red)[%cn]%Creset%n%C(bold)%s%Creset%n%+b' --color --decorate=short --since '2 days ago'
+	fupv = !git fup --stat
 
 	# Toggle ignoring changes to tracked files. Used for temporary
 	# modifications that do not need to be committed.
