@@ -3,9 +3,10 @@
 
 [core]
 	editor = "subl -n -w"
+	excludesfile = ~/.gitignore
 
 [push]
-	default = simple
+	default = matching
 
 [color]
 	ui = true
@@ -62,6 +63,9 @@
 
 	lg   = log --pretty=format:'%C(yellow)%h %C(blue)%ad%C(green)%d%Creset %s %C(reset)%C(red)[%cn]%Creset' --color --decorate=short --date=short --abbrev-commit --graph
 	ls   = log --pretty=format:'%C(yellow)%h %C(blue)%ad%C(green)%d% C(red)[%cn]%Creset%n%C(bold)%s%Creset%n%+b' --color --decorate=short --stat
+
+	# follow up
+	fup  = !git ls --since '2 days ago'
 
 	# Toggle ignoring changes to tracked files. Used for temporary
 	# modifications that do not need to be committed.
