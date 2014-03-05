@@ -51,7 +51,7 @@
 	cm   = commit -m
 	ca   = commit --amend
 	cma  = commit --amend -m
-	cam  = cma
+	cam  = !git cma
 
 	cl   = clone
 	co   = checkout
@@ -62,7 +62,8 @@
 	ss   = stash save
 
 	lg   = log --pretty=format:'%C(yellow)%h %C(blue)%ad%C(green)%d%Creset %s %C(reset)%C(red)[%cn]%Creset' --color --decorate=short --date=short --abbrev-commit --graph
-	ls   = log --pretty=format:'%C(yellow)%h %C(blue)%ad%C(green)%d% C(red)[%cn]%Creset%n%C(bold)%s%Creset%n%+b' --color --decorate=short --stat
+	ls   = log --pretty=format:'%C(yellow)%h %C(blue)%ad%C(green)%d% C(red)[%cn]%Creset%n%C(bold)%s%Creset%n%+b' --color --decorate=short
+	lsv  = log --pretty=format:'%C(yellow)%h %C(blue)%ad%C(green)%d% C(red)[%cn]%Creset%n%C(bold)%s%Creset%n%+b' --color --decorate=short --stat
 
 	# follow up
 	fup  = log --pretty=format:'%C(yellow)%h %C(blue)%ad%C(green)%d% C(red)[%cn]%Creset%n%C(bold)%s%Creset%n%+b' --color --decorate=short --since '2 days ago'
