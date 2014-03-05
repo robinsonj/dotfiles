@@ -6,6 +6,9 @@ PROMPT='%1~ $ '
 RPROMPT='%*'
 
 ### Aliases
+# Slightly more informative 'ls.'
+alias ls=' pwd; ls -aFG'
+
 # Quick shortcut for running rspec with verbose documentation on all tests.
 alias rfd='rspec --format documentation'
 
