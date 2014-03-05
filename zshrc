@@ -6,6 +6,14 @@ PROMPT='%1~ $ '
 RPROMPT='%*'
 
 ### Aliases
+# Quick shortcut for running rspec with verbose documentation on all tests.
+alias rfd='rspec --format documentation'
+
+# Reload ~/.zshrc in the current terminal tab.
+alias rz='source ~/.zshrc'
+
+# Edit ~/.zshrc
+alias ez='nano ~/.zshrc'
 
 ### zshoptions
 # Change directories if name of a dir is given as a command (with no 'cd').
