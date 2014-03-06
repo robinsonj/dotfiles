@@ -10,7 +10,7 @@ RPROMPT='%*'
 alias ls=' pwd; ls -aFG'
 
 # Quick cleaning of screen.
-alias cc='clear'
+alias cx='clear'
 
 # Quick shortcut for running rspec with verbose documentation on all tests.
 alias rfd='rspec --format documentation'
