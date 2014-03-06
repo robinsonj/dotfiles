@@ -18,6 +18,9 @@ alias rz='source ~/.zshrc'
 # Edit ~/.zshrc
 alias ez='nano ~/.zshrc'
 
+# Edit ~/.gitconfig
+alias eg='nano ~/.gitconfig'
+
 ### zshoptions
 # Change directories if name of a dir is given as a command (with no 'cd').
 setopt AUTO_CD
