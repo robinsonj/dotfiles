@@ -7,7 +7,7 @@ RPROMPT='%*'
 
 ### Aliases
 # Slightly more informative 'ls.'
-alias ls=' pwd; ls -aFG'
+alias ls=' pwd; ls -aFG --color'
 
 # Quick cleaning of screen.
 alias cx='clear'
