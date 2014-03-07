@@ -5,6 +5,27 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 PROMPT='%1~ $ '
 RPROMPT='%*'
 
+### Completion loading and git 'g' function from thoughtbot
+
+# completion
+autoload -U compinit
+compinit
+
+### Functions
+# 'g' shortcut
+g() {
+     if [[ $# > 0 ]]; then
+          git $@
+     else
+          git st
+     fi
+}
+
+#
+compdef g=git
+
+###
+
 ### Aliases
 # Slightly more informative 'ls.'
 alias ls=' pwd; ls -aFG'
