@@ -1,3 +1,6 @@
 .config
 .gitsecret*
 .*secret
+
+# Ignore vim's *.swp buffer files.
+*.swp
