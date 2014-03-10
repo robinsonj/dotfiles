@@ -49,7 +49,7 @@ compdef g=git
 alias ls=' pwd; ls -aFG --color'
 
 # Quick cleaning of screen.
-alias cx='clear'
+alias cx=' clear'
 
 # Quick shortcut for running rspec with verbose documentation on all tests.
 alias rfd='rspec --format documentation'
