@@ -46,7 +46,7 @@ compdef g=git
 
 ### Aliases
 # Slightly more informative 'ls.'
-alias ls=' pwd; ls -aFG --color'
+alias ls=' pwd; ls -aFG'
 
 # Quick cleaning of screen.
 alias cx=' clear'
