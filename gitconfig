@@ -56,8 +56,8 @@
 	cl   = clone
 	co   = checkout
 
-	br   = branch
-	brv  = branch -v
+	br-v = branch
+	br   = branch -v
 
 	sl   = stash list
 	sa   = stash apply
