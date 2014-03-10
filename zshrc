@@ -58,7 +58,7 @@ alias rfd='rspec --format documentation'
 alias rz='source ~/.zshrc'
 
 # Edit ~/.zshrc
-alias ez='nano ~/.zshrc'
+alias ez='vim ~/.zshrc'
 
 # Edit ~/.gitconfig
 alias eg='nano ~/.gitconfig'
