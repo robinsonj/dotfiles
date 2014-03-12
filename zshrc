@@ -51,6 +51,9 @@ alias ls=' pwd; ls -aFG'
 # Quick cleaning of screen.
 alias cx=' clear'
 
+# Shortcut for running default rspec tests with progress dots.
+aliad rfp='rspec --format progress'
+
 # Quick shortcut for running rspec with verbose documentation on all tests.
 alias rfd='rspec --format documentation'
 
