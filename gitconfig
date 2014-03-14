@@ -42,7 +42,7 @@
 	aa   = add .
 
 	d    = diff --word-diff --color-words
-	di   = diff
+	df   = diff
 
 	rmr  = rm -r
 	rmrf = rm -rf
