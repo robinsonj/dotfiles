@@ -69,7 +69,7 @@ alias rz='source ~/.zshrc'
 alias ez='vim ~/.zshrc'
 
 # Edit ~/.gitconfig
-alias eg='nano ~/.gitconfig'
+alias eg='vim ~/.gitconfig'
 
 ### zshoptions
 # Change directories if name of a dir is given as a command (with no 'cd').
