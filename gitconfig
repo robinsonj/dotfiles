@@ -39,6 +39,7 @@
 	rh2  = reset HEAD^^ --hard
 
 	a    = add
+	ap   = add --patch
 	aa   = add .
 
 	d    = diff --word-diff --color-words
