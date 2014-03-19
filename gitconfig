@@ -28,8 +28,8 @@
 [alias]
 	sc   = !git config -l | grep alias | cut -c 7-
 
-	st   = status -sb
-	sti  = status -sb --ignored
+	st   = status -sb -uall
+	sti  = status -sb -uall --ignored
 
 	r    = reset
 	r1   = reset HEAD^
