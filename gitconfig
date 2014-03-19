@@ -43,6 +43,7 @@
 	aa   = add .
 
 	d    = diff --word-diff --color-words
+	ds   = !git d --cached
 	df   = diff
 
 	rmr  = rm -r
