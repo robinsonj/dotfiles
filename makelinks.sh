@@ -18,7 +18,7 @@ echo "...done."
 # Make symlinks
 for file in $dotfiles/*
 do
-     if [ "$file" != "$dotfiles/makelinks.sh" ] && [ "$file" != "$dotfiles/.gitignore" ] && [ "$file" != "$dotfiles/backup" ] && [ "$file" != "$dotfiles/READEME.md" ]; then
+     if [ "$file" != "$dotfiles/makelinks.sh" ] && [ "$file" != "$dotfiles/.gitignore" ] && [ "$file" != "$dotfiles/backup" ] && [ "$file" != "$dotfiles/README.md" ]; then
           echo "Symlinking $file with $HOME/.${file##*/}"
           ln -sv $file "$HOME/.${file##*/}"
           echo "...done."
