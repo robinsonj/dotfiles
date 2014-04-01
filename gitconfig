@@ -6,7 +6,7 @@
 	excludesfile = ~/.gitignore
 
 [push]
-	default = matching
+	default = upstream
 
 [color]
 	ui = true
@@ -58,8 +58,10 @@
 	cl   = clone
 	co   = checkout
 
-	br-v = branch
-	br   = branch -v
+	br   = branch 
+	brv  = branch -vv
+	bra  = branch -a
+	brav = branch -avv
 
 	sl   = stash list
 	sa   = stash apply
