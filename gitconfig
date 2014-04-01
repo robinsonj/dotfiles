@@ -12,18 +12,26 @@
 	ui = true
 
 [color "branch"]
-	current = blue bold
-	local   = white bold
-	remote  = red bold
+	current    = blue bold
+	local      = white bold
+	remote     = red bold
 
 [color "diff"]
+	plain      = normal 
+	meta       = black bold
+	frag       = cyan 
+	func       = normal
+	old        = red
+	new        = green
+	commit     = yellow
+	whitespace = magenta reverse
 
 [color "status"]
-	header    = black bold
-	added     = green bold
-	changed   = red bold
-	untracked = blue bold
-	deleted   = white bold
+	header     = black bold
+	added      = green bold
+	changed    = red bold
+	untracked  = blue bold
+	deleted    = white bold
 
 [alias]
 	sc   = !git config -l | grep alias | cut -c 7-
