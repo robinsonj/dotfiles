@@ -2,7 +2,8 @@
 	path = ~/.dotfiles/.gitsecrets
 
 [core]
-	editor = "subl -n -w"
+	# editor = "subl -n -w"
+	editor = vim
 	excludesfile = ~/.gitignore
 
 [push]
@@ -13,7 +14,7 @@
 
 [color "branch"]
 	current    = blue bold
-	local      = white bold
+	local      = black 
 	remote     = red bold
 
 [color "diff"]
