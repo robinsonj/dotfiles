@@ -51,7 +51,11 @@ compdef g=git
 
 ### Aliases
 # Slightly more informative 'ls.'
-alias ls=' pwd; ls -aFG'
+if [ `uname` = "Darwin" ]; then
+    alias ls=' pwd; ls -aF -G'
+elif [ `uname` = "Linux" ]; then
+    alias ls=" echo -e '\033[1;34m' `pwd`; echo -en '\033[0m \n'; ls -aF --color"
+fi
 
 # Quick cleaning of screen.
 alias cx=' clear'
