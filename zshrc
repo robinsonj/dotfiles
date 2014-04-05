@@ -61,10 +61,10 @@ fi
 alias cx=' clear'
 
 # Shortcut for running default rspec tests with progress dots.
-alias rfp='rspec --format progress'
+alias rfp='time rspec --format progress'
 
 # Quick shortcut for running rspec with verbose documentation on all tests.
-alias rfd='rspec --format documentation'
+alias rfd='time rspec --format documentation'
 
 # Reload ~/.zshrc in the current terminal tab.
 alias rz='source ~/.zshrc'
