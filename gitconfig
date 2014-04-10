@@ -1,9 +1,9 @@
 [include]
-	path = ~/.dotfiles/.gitsecrets
+	path = ~/.gitsecrets
 
 [core]
 	# editor = "subl -n -w"
-	editor = vim
+	editor = vim 
 	excludesfile = ~/.gitignore
 
 [push]
