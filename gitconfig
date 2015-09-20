@@ -12,13 +12,13 @@
 
 [color "branch"]
 	current    = blue bold
-	local      = black 
+	local      = black
 	remote     = red bold
 
 [color "diff"]
-	plain      = normal 
+	plain      = normal
 	meta       = black bold
-	frag       = cyan 
+	frag       = cyan
 	func       = normal
 	old        = red
 	new        = green
@@ -33,58 +33,60 @@
 	deleted    = white bold
 
 [alias]
-	sc   = !git config -l | grep alias | cut -c 7-
+	jsc   = !git config -l | grep alias | cut -c 7-
+	jf    = grep -Iin --full-name --break --show-function
+	jst   = status -sb -uall
+	jsti  = status -sb -uall --ignored
 
-	st   = status -sb -uall
-	sti  = status -sb -uall --ignored
+	jr    = reset
+	jr1   = reset HEAD^
+	jr2   = reset HEAD^^
+	jrh   = reset --hard
+	jrh1  = reset HEAD^ --hard
+	jrh2  = reset HEAD^^ --hard
 
-	r    = reset
-	r1   = reset HEAD^
-	r2   = reset HEAD^^
-	rh   = reset --hard
-	rh1  = reset HEAD^ --hard
-	rh2  = reset HEAD^^ --hard
+	ja    = add
+	jap   = add --patch
+	jaa   = add .
 
-	a    = add
-	ap   = add --patch
-	aa   = add .
+	jd    = diff --word-diff --color-words
+	jds   = !git jd --cached
+	jdf   = diff
 
-	d    = diff --word-diff --color-words
-	ds   = !git d --cached
-	df   = diff
+	jrmr  = rm -r
+	jrmrf = rm -rf
 
-	rmr  = rm -r
-	rmrf = rm -rf
+	jc    = commit
+	jcm   = commit -m
+	jca   = commit --amend
+	jcma  = commit --amend -m
+	jcam  = !git jcma
 
-	c    = commit
-	cm   = commit -m
-	ca   = commit --amend
-	cma  = commit --amend -m
-	cam  = !git cma
+	jcl   = clone
+	jco   = checkout
 
-	cl   = clone
-	co   = checkout
+	jbr   = branch
+	jbrv  = branch -vv
+	jbra  = branch -a
+	jbrav = branch -avv
 
-	br   = branch 
-	brv  = branch -vv
-	bra  = branch -a
-	brav = branch -avv
+	jsl   = stash list
+	jsa   = stash apply
+	jss   = stash save
 
-	sl   = stash list
-	sa   = stash apply
-	ss   = stash save
+  jnp   = log --stat origin/master..HEAD
 
-	lg   = log --pretty=format:'%C(yellow)%h %C(blue)%ad%C(green)%d%Creset %s %C(reset)%C(red)[%cn]%Creset' --color --decorate=short --date=short --abbrev-commit --graph
-	lga  = !git lg --all
-	ls   = log --pretty=format:'%C(yellow)%h %C(blue)%ad%C(green)%d% C(red)[%cn]%Creset%n%C(bold)%s%Creset%n%+b' --color --decorate=short
-	lsv  = log --pretty=format:'%C(yellow)%h %C(blue)%ad%C(green)%d% C(red)[%cn]%Creset%n%C(bold)%s%Creset%n%+b' --color --decorate=short --stat
+	jlg   = log --pretty=format:'%C(yellow)%h %C(blue)%ad%C(green)%d%Creset %s %C(reset)%C(red)[%an - %cn]%Creset' --color --decorate=short --date=short --abbrev-commit --graph
+	jlga  = !git jlg --all
+	jls   = log --pretty=format:'%C(yellow)%h %C(blue)%ad%C(green)%d% C(red)[%cn]%Creset%n%C(bold)%s%Creset%n%+b' --color --decorate=short
+	jlsv  = log --pretty=format:'%C(yellow)%h %C(blue)%ad%C(green)%d% C(red)[%cn]%Creset%n%C(bold)%s%Creset%n%+b' --color --decorate=short --stat
 
 	# follow up
-	fup  = log --pretty=format:'%C(yellow)%h %C(blue)%ad%C(green)%d% C(red)[%cn]%Creset%n%C(bold)%s%Creset%n%+b' --color --decorate=short --since '2 days ago'
-	fupv = !git fup --stat
+	jfup  = log --pretty=format:'%C(yellow)%h %C(blue)%ad%C(green)%d% C(red)[%cn]%Creset%n%C(bold)%s%Creset%n%+b' --color --decorate=short --since '2 days ago'
+	jfupv = !git jfup --stat
 
 	# Toggle ignoring changes to tracked files. Used for temporary
 	# modifications that do not need to be committed.
-	sic  = update-index --assume-unchanged
-	nic  = update-index --no-assume-unchanged
-	lic  = !git ls-files -v | grep ^h | cut -c 3-
+	jsic  = update-index --assume-unchanged
+	jnic  = update-index --no-assume-unchanged
+	jlic  = !git ls-files -v | grep ^h | cut -c 3-
