@@ -75,6 +75,9 @@ alias ez='vim ~/.zshrc'
 # Edit ~/.gitconfig
 alias eg='vim ~/.gitconfig'
 
+# TaskWarrior
+alias tin='task add +inbox'
+
 ### zshoptions
 # Change directories if name of a dir is given as a command (with no 'cd').
 setopt AUTO_CD
@@ -89,5 +92,5 @@ setopt HIST_IGNORE_SPACE
 setopt PROMPT_SUBST
 
 ### Prompt config. RPOMPT is right-justified on the prompt line.
-PROMPT='%1~ ${vcs_info_msg_0_}$ '
+PROMPT='%1~$(tinbox) ${vcs_info_msg_0_}$ '
 RPROMPT='%*'
