@@ -2,8 +2,6 @@
 	path = ~/.gitsecrets
 
 [core]
-	editor = "subl -n -w"
-	# editor = vim
 	excludesfile = ~/.gitignore
 
 [push]
