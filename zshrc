@@ -47,6 +47,26 @@ g() {
 #
 compdef g=git
 
+# TaskWarrior Inbox
+tinbox() {
+  tinbox_count=$(task +inbox status:pending count)
+
+  if [ "${tinbox_count}" -gt 0 ]
+  then
+    echo " [tin: ${tinbox_count}]"
+  else
+    echo ''
+  fi
+}
+
+tickle () {
+  deadline=$1
+  shift
+  tin +tickle wait:$deadline $@
+}
+alias tick=tickle
+alias think='tickle +1d'
+
 ###
 
 ### Aliases
