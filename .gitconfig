@@ -48,6 +48,8 @@
 	ja    = add
 	jap   = add --patch
 	jaa   = add .
+	jaf   = add --force
+	jaaf  = add . --force
 
 	jd    = diff --word-diff --color-words
 	jds   = !git jd --cached
@@ -74,7 +76,7 @@
 	jsa   = stash apply
 	jss   = stash save
 
-  jnp   = log --stat origin/master..HEAD
+ 	jnp   = log --stat origin/master..HEAD
 
 	jlg   = log --pretty=format:'%C(yellow)%h %C(blue)%ad%C(green)%d%Creset %s %C(reset)%C(red)[%an - %cn]%Creset' --color --decorate=short --date=short --abbrev-commit --graph
 	jlga  = !git jlg --all
