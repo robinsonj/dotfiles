@@ -102,6 +102,10 @@ alias tin='task add +inbox'
 # Change directories if name of a dir is given as a command (with no 'cd').
 setopt AUTO_CD
 
+# Save the terminal command history to a file in the home directory.
+SAVEHIST=1000
+HISTFILE=~/.zsh_history
+
 # Don't add commands do history if they are duplicates of the last command in it.
 setopt HIST_IGNORE_DUPS
 
