@@ -46,5 +46,7 @@ fi
 #exec xterm -geometry 80x66+0+0 -name login
 
 # feh --bg-scale Pictures/Wallpapers/revenant_wallpaper_3200x1800.jpg
-feh --bg-scale Pictures/Wallpapers/revenant_wallpaper_1777x1000.jpg
+# feh --bg-scale Pictures/Wallpapers/revenant_wallpaper_1777x1000.jpg
+feh --bg-scale ~/Pictures/Wallpapers/snowy_lake.jpg
+
 exec i3
