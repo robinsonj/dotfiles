@@ -1,7 +1,10 @@
 URxvt.font: xft:Inconsolata-dz:size=10:antialias=true:hinting=slight
 
+! Disable the scrollbar.
 URxvt.scrollBar: False
-URxvt.internalBorder: 10
+
+! Pad the inner-border with a little empty space.
+URxvt.internalBorder: 15
 
 URxvt.color0:   #adced7
 
@@ -33,3 +36,7 @@ URxvt.color15:  #234252
 ! Use some of the above colorscheme as the foreground and background colors.
 URxvt.background: #004560
 URxvt.foreground: #73acbf
+
+! Enable transparency.
+! URxvt.transparent: true
+! URxvt.shading: 35
