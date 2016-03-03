@@ -20,8 +20,8 @@
 	meta       = black bold
 	frag       = cyan
 	func       = normal
-	old        = red
-	new        = green
+	old        = red bold
+	new        = green bold
 	commit     = yellow
 	whitespace = magenta reverse
 
@@ -30,11 +30,13 @@
 	added      = green bold
 	changed    = red bold
 	untracked  = blue bold
-	deleted    = white bold
+	branch     = cyan bold
+	nobranch   = yellow bold
 
 [alias]
 	jsc   = !git config -l | grep alias | cut -c 7-
 	jf    = grep -Iin --full-name --break --show-function
+
 	jst   = status -sb -uall
 	jsti  = status -sb -uall --ignored
 
