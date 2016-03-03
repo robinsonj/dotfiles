@@ -93,7 +93,7 @@ alias rz='source ~/.zshrc'
 alias ez='vim ~/.zshrc'
 
 # Edit ~/.gitconfig
-alias eg='vim ~/.gitconfig'
+alias eg='vim ~/.config/git/config
 
 # TaskWarrior
 alias tin='task add +inbox'

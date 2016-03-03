@@ -1,8 +1,8 @@
 [include]
-	path = ~/.gitsecrets
+	path = ~/.config/git/secrets
 
 [core]
-	excludesfile = ~/.gitignore
+	excludesfile = ~/.config/git/ignore
 
 [push]
 	default = upstream
@@ -78,7 +78,7 @@
 	jsa   = stash apply
 	jss   = stash save
 
- 	jnp   = log --stat origin/master..HEAD
+	jnp   = log --stat origin/master..HEAD
 
 	jlg   = log --pretty=format:'%C(yellow)%h %C(blue)%ad%C(green)%d%Creset %s %C(reset)%C(red)[%an - %cn]%Creset' --color --decorate=short --date=short --abbrev-commit --graph
 	jlga  = !git jlg --all
