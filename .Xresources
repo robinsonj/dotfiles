@@ -11,7 +11,7 @@ URxvt.color0:   #adced7
 ! Blue color1
 ! URxvt.color1:   #91bdca
 ! Red color1
-URxvt.color1:   #B63737
+URxvt.color1:   #C42200
 
 URxvt.color2:   #73acbf
 URxvt.color3:   #5c9db3
@@ -24,7 +24,7 @@ URxvt.color8:   #4a6b7a
 ! Blue color9
 ! URxvt.color9:   #5d8390
 ! Red color9
-URxvt.color9:   #581818
+URxvt.color9:   #2F0800
 
 URxvt.color10:  #76bfdf
 URxvt.color11:  #04607d
