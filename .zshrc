@@ -1,10 +1,4 @@
-
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
-# linuxbrew loading
-export PATH="$HOME/.linuxbrew/bin:$PATH"
-export LD_LIBRARY_PATH="$HOME/.linuxbrew/lib:$LD_LIBRARY_PATH"
-
 
 autoload -U colors && colors
 
@@ -97,6 +91,9 @@ alias eg='vim ~/.config/git/config
 
 # TaskWarrior
 alias tin='task add +inbox'
+
+# Neovim
+alias vim='nvim'
 
 ### zshoptions
 # Change directories if name of a dir is given as a command (with no 'cd').
