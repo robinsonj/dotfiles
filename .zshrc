@@ -1,4 +1,4 @@
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+# PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 autoload -U colors && colors
 
@@ -34,7 +34,7 @@ g() {
      if [[ $# > 0 ]]; then
           git $@
      else
-          git st
+          git jst
      fi
 }
 
@@ -66,10 +66,15 @@ alias think='tickle +1d'
 ### Aliases
 # Slightly more informative 'ls.'
 if [ `uname` = "Darwin" ]; then
-    alias ls=" echo -e '\033[1;34m' `pwd`; echo -en '\033[0m \n'; ls -aF -G"
+    alias ll='ls -la'
+    # alias ls="ls -aF -G"
 elif [ `uname` = "Linux" ]; then
-    alias ls=" echo -e '\033[1;34m' `pwd`; echo -en '\033[0m \n'; ls -aF --color"
+    alias ll='ls -la'
+    # alias ls="ls -aF --color"
 fi
+
+# neovim
+alias vim=nvim
 
 # Quick cleaning of screen.
 alias cx=' clear'
@@ -100,7 +105,7 @@ alias vim='nvim'
 setopt AUTO_CD
 
 # Save the terminal command history to a file in the home directory.
-SAVEHIST=1000
+SAVEHIST=20000
 HISTFILE=~/.zsh_history
 
 # Don't add commands do history if they are duplicates of the last command in it.
