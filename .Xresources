@@ -6,36 +6,7 @@ URxvt.scrollBar: False
 ! Pad the inner-border with a little empty space.
 URxvt.internalBorder: 15
 
-URxvt.color0:   #adced7
-
-! Blue color1
-! URxvt.color1:   #91bdca
-! Red color1
-URxvt.color1:   #C42200
-
-URxvt.color2:   #73acbf
-URxvt.color3:   #5c9db3
-URxvt.color4:   #428aa1
-URxvt.color5:   #1a7190
-URxvt.color6:   #1b5668
-URxvt.color7:   #004560
-URxvt.color8:   #4a6b7a
-
-! Blue color9
-! URxvt.color9:   #5d8390
-! Red color9
-URxvt.color9:   #2F0800
-
-URxvt.color10:  #76bfdf
-URxvt.color11:  #04607d
-URxvt.color12:  #002b46
-URxvt.color13:  #70989a
-URxvt.color14:  #8ea3a6
-URxvt.color15:  #234252
-
-! Use some of the above colorscheme as the foreground and background colors.
-URxvt.background: #004560
-URxvt.foreground: #73acbf
+#include "~/.Xcolors/hybrid"
 
 ! Enable transparency.
 ! URxvt.transparent: true
