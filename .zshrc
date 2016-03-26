@@ -92,7 +92,7 @@ alias rz='source ~/.zshrc'
 alias ez='vim ~/.zshrc'
 
 # Edit ~/.gitconfig
-alias eg='vim ~/.config/git/config
+alias eg='vim ~/.config/git/config'
 
 # TaskWarrior
 alias tin='task add +inbox'
@@ -108,7 +108,7 @@ setopt AUTO_CD
 SAVEHIST=20000
 HISTFILE=~/.zsh_history
 
-# Don't add commands do history if they are duplicates of the last command in it.
+# Don't add commands to history if they are duplicates of the last command.
 setopt HIST_IGNORE_DUPS
 
 # Don't store commands in history if starting with a leading space.
