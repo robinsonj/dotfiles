@@ -6,7 +6,7 @@ URxvt.scrollBar: False
 ! Pad the inner-border with a little empty space.
 URxvt.internalBorder: 15
 
-#include "~/.Xcolors/hybrid"
+#include ".Xcolors/hybrid"
 
 ! Enable transparency.
 ! URxvt.transparent: true
