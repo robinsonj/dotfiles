@@ -114,6 +114,14 @@ setopt HIST_IGNORE_DUPS
 # Don't store commands in history if starting with a leading space.
 setopt HIST_IGNORE_SPACE
 
+# TODO: Document usage of these options.
+setopt APPEND_HISTORY
+setopt INC_APPEND_HISTORY
+setopt EXTENDED_HISTORY
+setopt HIST_EXPIRE_DUPS_FIRST
+setopt HIST_VERIFY
+setopt SHARE_HISTORY
+
 # Enable prompt substitution.
 setopt PROMPT_SUBST
 
