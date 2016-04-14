@@ -11,6 +11,14 @@ Plug 'scrooloose/nerdtree'
 " Build in .editorconfig support.
 Plug 'editorconfig/editorconfig-vim'
 
+" Syntax highlighters.
+Plug 'saltstack/salt-vim' " Saltstack (.sls)
+
+" Miscellaneous utilities.
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
+Plug 'vim-airline/vim-airline' " Powerful status bar.
+
 call plug#end()
 
 " Load any files in the local 'init' directory.
