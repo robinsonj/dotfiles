@@ -18,6 +18,7 @@ Plug 'saltstack/salt-vim' " Saltstack (.sls)
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline' " Powerful status bar.
+Plug 'vim-airline/vim-airline-themes' " Color themese for airline.
 
 call plug#end()
 
