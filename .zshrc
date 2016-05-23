@@ -44,13 +44,15 @@ compdef g=git
 
 # TaskWarrior Inbox
 tinbox() {
-  tinbox_count=$(task +inbox status:pending count)
+  if hash task 2>/dev/null; then
+    tinbox_count=$(task +inbox status:pending count)
 
-  if [ "${tinbox_count}" -gt 0 ]
-  then
-    echo " [tin: ${tinbox_count}]"
-  else
-    echo ''
+    if [ "${tinbox_count}" -gt 0 ]
+    then
+      echo " [tin: ${tinbox_count}]"
+    else
+      echo ''
+    fi
   fi
 }
 
