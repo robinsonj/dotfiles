@@ -7,6 +7,7 @@ map <Leader><Leader> :!
 cabbrev W w
 cabbrev Q q
 cabbrev Wq wq
+cabbrev Wa wa
 
 " Search.
 nmap <leader>s :%s/
