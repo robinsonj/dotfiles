@@ -18,7 +18,7 @@ zstyle ':vcs_info:*' enable p4 git svn
 zstyle ':vcs_info:*' check-for-changes true
 
 # Git style prompt format
-zstyle ':vcs_info:git*' formats "%{$fg[green]%}[%b]%{$reset_color%} %{$fg[red]%}%m%u%c%{$reset_color%}"
+zstyle ':vcs_info:git*' formats "%{$fg[green]%}[%b]%{$reset_color%}[%{$fg[red]%}%m%u%c%{$reset_color%}]"
 
 precmd() {
 	vcs_info
