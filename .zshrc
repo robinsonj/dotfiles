@@ -129,5 +129,5 @@ setopt SHARE_HISTORY
 setopt PROMPT_SUBST
 
 ### Prompt config. RPOMPT is right-justified on the prompt line.
-PROMPT='%1~$(tinbox) ${vcs_info_msg_0_}$ '
-RPROMPT='%*'
+PROMPT='%{$fg[magenta]%}%n%{$fg_bold[black]%}@%{$reset_color%}%{$fg[blue]%}%M%{$reset_color%} %~$(tinbox) ${vcs_info_msg_0_} |> '
+RPROMPT='%* | %w'
