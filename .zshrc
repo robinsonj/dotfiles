@@ -8,7 +8,7 @@ autoload -Uz vcs_info
 
 zstyle ':vcs_info:*' actionformats \
 	'%F{5}(%f%s%F{5})%F{3}-%F{5}[%F{2}%b%F{3}|%F{1}%a%F{5}]%f '
-# zstyle ':vcs_info:*' formats       \ 
+# zstyle ':vcs_info:*' formats       \
 #     '%F{5}(%f%s%F{5})%F{3}-%F{5}[%F{2}%b%F{5}]%f '
 
 # Enable only the following VC systems.
@@ -24,7 +24,7 @@ precmd() {
 	vcs_info
 }
 
-### Completion loading and git 'g' function from thoughtbot
+### Initialize zsh tab-completion.
 # completion
 autoload -U compinit
 compinit
