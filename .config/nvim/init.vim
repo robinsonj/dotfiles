@@ -13,6 +13,8 @@ Plug 'editorconfig/editorconfig-vim'
 
 " Syntax highlighters.
 Plug 'saltstack/salt-vim' " Saltstack (.sls)
+Plug 'cespare/vim-toml' " TOML (.toml)
+Plug 'elixir-lang/vim-elixir' " Elixr (.ex)
 
 " Miscellaneous utilities.
 Plug 'airblade/vim-gitgutter'
