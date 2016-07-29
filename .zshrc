@@ -79,6 +79,10 @@ fi
 # neovim
 alias vim=nvim
 
+# tmux
+# Alias tmux to honor XDG_CONFIG_HOME.
+alias tmux="tmux -f $XDG_CONFIG_HOME/tmux/tmux.conf"
+
 # Quick cleaning of screen.
 alias cx=' clear'
 
