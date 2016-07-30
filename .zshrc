@@ -109,7 +109,8 @@ setopt AUTO_CD
 
 # Save the terminal command history to a file in the home directory.
 SAVEHIST=20000
-HISTFILE=~/.zsh_history
+HISTSIZE=20000
+HISTFILE=$HOME/.zsh_history
 
 # Don't add commands to history if they are duplicates of the last command.
 setopt HIST_IGNORE_DUPS
