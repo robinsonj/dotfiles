@@ -16,11 +16,15 @@ Plug 'saltstack/salt-vim' " Saltstack (.sls)
 Plug 'cespare/vim-toml' " TOML (.toml)
 Plug 'elixir-lang/vim-elixir' " Elixr (.ex)
 
+" Editing helpers.
+Plug 'Raimondi/delimitMate' " Provide automatic delimiter closing (parens,
+                            " brackets, etc).
+
 " Miscellaneous utilities.
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline' " Powerful status bar.
-Plug 'vim-airline/vim-airline-themes' " Color themese for airline.
+Plug 'vim-airline/vim-airline-themes' " Color themes for airline.
 
 call plug#end()
 
