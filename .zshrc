@@ -69,11 +69,10 @@ alias think='tickle +1d'
 ### Aliases
 # Slightly more informative 'ls.'
 if [ `uname` = "Darwin" ]; then
-    alias ll='ls -la'
-    # alias ls="ls -aF -G"
+  alias ll='ls -la'
+  # alias ls="ls -aF -G"
 elif [ `uname` = "Linux" ]; then
-    alias ll='ls -la'
-    # alias ls="ls -aF --color"
+  alias ll='ls --color --classify --all --human-readable -l'
 fi
 
 # neovim
