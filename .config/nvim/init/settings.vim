@@ -35,6 +35,7 @@ set history=1024                " History size.
 set smartcase                   " Smart case-sensitivity when searching (overrides ignorecase).
 
 set autoread                    " No prompt for file changes outside Vim.
+au  CursorHold * checktime      " Automatically reload changed buffers.
 
 set hls                         " search with highlights by default
 
@@ -45,3 +46,6 @@ set autowriteall
 set swapfile
 set directory=~/tmp/vim,~/tmp
 set backupdir=~/tmp/vim,~/tmp
+
+" Use backupcopy.
+set backupcopy=yes
