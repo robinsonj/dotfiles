@@ -1,5 +1,6 @@
 # PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 PATH=$PATH:$HOME/bin
+PATH=$PATH:$HOME/.cargo/bin # Add Rust cargo bin path to PATH.
 
 autoload -U colors && colors
 
