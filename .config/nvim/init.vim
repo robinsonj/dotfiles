@@ -48,6 +48,9 @@ Plug 'vim-airline/vim-airline-themes' " Color themes for airline.
 Plug 'SirVer/ultisnips'               " Snippet management.
 Plug 'roxma/nvim-yarp'                " Support for ncm2
 
+" Power-user utils.
+Plug 'lervag/vimtex' " Powerful suite of latex tools.
+
 call plug#end()
 
 " Load any files in the local 'init' directory.

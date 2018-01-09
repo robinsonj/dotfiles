@@ -51,6 +51,10 @@ set backupdir=~/tmp/vim,~/tmp
 " Use backupcopy.
 set backupcopy=yes
 
+
 " Long-live undos
 set undodir=~/tmp/vimundo
 set undofile
+
+" Per file-type settings.
+au BufRead,BufNewFile *.tex setlocal textwidth=80 " Auto-wrap .tex files at 80 characters.
