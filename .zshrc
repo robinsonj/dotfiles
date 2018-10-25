@@ -76,9 +76,6 @@ elif [ `uname` = "Linux" ]; then
   alias ll='ls --color --classify --all --human-readable -l'
 fi
 
-# neovim
-alias vim=nvim
-
 # tmux
 # Alias tmux to honor XDG_CONFIG_HOME.
 alias tmux="tmux -f $XDG_CONFIG_HOME/tmux/tmux.conf"
@@ -106,6 +103,11 @@ alias tin='task add +inbox'
 
 # Neovim
 alias vim='nvim'
+
+# Ripgrep replacement for grep - https://github.com/BurntSushi/ripgrep
+if rg_loc="$(type -p "rg")" || [[ -z ${rg_log} ]]; then
+  alias grep='rg'
+fi
 
 ### zshoptions
 # Change directories if name of a dir is given as a command (with no 'cd').
