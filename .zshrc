@@ -39,7 +39,7 @@ g() {
      if [[ $# > 0 ]]; then
           git $@
      else
-          git jst
+          git st
      fi
 }
 
