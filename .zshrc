@@ -1,3 +1,6 @@
+# Ensure nothing in $PATH is duplicated.
+typeset -Ug path
+
 # PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 PATH=$PATH:$HOME/bin
 PATH=$PATH:$HOME/.cargo/bin # Add Rust cargo bin path to PATH.
