@@ -72,11 +72,16 @@ alias think='tickle +1d'
 
 ### Aliases
 # Slightly more informative 'ls.'
-if [ `uname` = "Darwin" ]; then
-  alias ll='ls -la'
-  # alias ls="ls -aF -G"
-elif [ `uname` = "Linux" ]; then
-  alias ll='ls --color --classify --all --human-readable -l'
+if exa_loc="$(type -p "exa")" || [[ -z ${exa_loc} ]]; then
+  # exa replacement for ls - https://github.com/ogham/exa
+  alias ls="exa --color always"
+  alias ll="ls --long --group --header --links --all --classify"
+else
+  if [ `uname` = "Darwin" ]; then
+    alias ll='ls -la'
+  elif [ `uname` = "Linux" ]; then
+    alias ll='ls --color --classify --all --human-readable -l'
+  fi
 fi
 
 # tmux
