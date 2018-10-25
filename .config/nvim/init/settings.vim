@@ -2,6 +2,7 @@ scriptencoding utf-8
 
 set number                      " Show line numbers.
 set nowrap                      " No wrapping.
+set signcolumn=yes              " Always show the signcolumn.
 
 " Tab settings.
 set expandtab                   " Use soft tabs.
@@ -49,3 +50,7 @@ set backupdir=~/tmp/vim,~/tmp
 
 " Use backupcopy.
 set backupcopy=yes
+
+" Long-live undos
+set undodir=~/tmp/vimundo
+set undofile

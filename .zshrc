@@ -138,3 +138,6 @@ setopt PROMPT_SUBST
 ### Prompt config. RPOMPT is right-justified on the prompt line.
 PROMPT='%{$fg[magenta]%}%n%{$fg_bold[black]%}@%{$reset_color%}%{$fg[blue]%}%M%{$reset_color%} %~$(tinbox) ${vcs_info_msg_0_} |> '
 RPROMPT='%* | %w'
+
+# Use fzf if it exists on the system.
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
