@@ -149,18 +149,6 @@ bindsym $mod+r mode "resize"
 # client.placeholder
 # client.background        $shade0
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
-bar {
-        mode invisible
-        status_command $HOME/.config/polybar/launch.sh
-        tray_output none
-        # workspace_buttons no
-
-        # don't show numbers when we don't have to
-        strip_workspace_numbers yes
-}
-
 ## Multimedia keys
 # Increase Volume
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 5%+ unmute
@@ -168,3 +156,6 @@ bindsym XF86AudioRaiseVolume exec amixer -q set Master 5%+ unmute
 bindsym XF86AudioLowerVolume exec amixer -q set Master 5%- unmute
 # Mute Volume
 bindsym XF86AudioMute exec amixer -q set Master mute
+
+# Startup commands
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
