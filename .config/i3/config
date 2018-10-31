@@ -157,5 +157,9 @@ bindsym XF86AudioLowerVolume exec amixer -q set Master 5%- unmute
 # Mute Volume
 bindsym XF86AudioMute exec amixer -q set Master mute
 
+## Window settings and workspace assignments.
+# Down with borders and window titles. Make me clean.
+for_window [class="^.*"] border pixel 0
+
 # Startup commands
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
