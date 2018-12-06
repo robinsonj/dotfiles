@@ -84,7 +84,7 @@
 
 	np   = log --stat origin/master..HEAD
 
-	lg   = log --pretty=format:'%C(yellow)%h %C(blue)%ad%C(green)%d%Creset %s %C(reset)%C(red)[%an - %cn]%Creset' --color --decorate=short --date=short --abbrev-commit --graph
+	lg   = log --pretty=format:'%C(yellow)%h %C(blue)%ad%C(green)%d%Creset %s %C(reset)%C(red)[%an]%Creset' --color --decorate=short --date=short --abbrev-commit --graph
 	lga  = !git lg --all
 	ls   = log --pretty=format:'%C(yellow)%h %C(blue)%ad%C(green)%d% C(red)[%cn]%Creset%n%C(bold)%s%Creset%n%+b' --color --decorate=short
 	lsv  = log --pretty=format:'%C(yellow)%h %C(blue)%ad%C(green)%d% C(red)[%cn]%Creset%n%C(bold)%s%Creset%n%+b' --color --decorate=short --stat
