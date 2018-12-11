@@ -66,7 +66,8 @@
 
 	c    = commit
 	cm   = commit -m
-	ca   = commit --amend
+	ca   = commit --amend --no-edit
+	cae  = commit --amend # "commit amend edit"
 	cma  = commit --amend -m
 	cam  = !git cma
 
