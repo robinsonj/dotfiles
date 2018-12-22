@@ -1,6 +1,15 @@
 {
-    "terminal.integrated.shell.linux": "/usr/bin/zsh",
+    "workbench.colorTheme": "Red",
+    "editor.fontSize": 10,
+    "editor.formatOnSave": true,
     "editor.minimap.renderCharacters": false,
-    "editor.minimap.side": "left",
-    "workbench.colorTheme": "Red"
+    "editor.rulers": [
+        80
+    ],
+    "window.zoomLevel": 0,
+    "terminal.integrated.shell.linux": "/bin/zsh",
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+    "editor.minimap.enabled": true
 }
