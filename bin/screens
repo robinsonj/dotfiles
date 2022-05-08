@@ -1,0 +1,46 @@
+#!/bin/bash
+
+read STATUS_EDP1  < /sys/class/drm/card0-eDP-1/status
+read STATUS_HDMI1 < /sys/class/drm/card0-HDMI-A-1/status
+read STATUS_HDMI2 < /sys/class/drm/card0-HDMI-A-2/status
+
+DEV_EDP1="eDP1"
+DEV=""
+DEVC=""
+STATUS="disconnected"
+
+if [[ "${STATUS_HDMI1}" = "connected" ]]; then
+  STATUS="connected"
+  DEV="HDMI1"
+  DEVC="HDMI-A-1"
+elif [[ "${STATUS_HDMI2}" = "connected" ]]; then
+  STATUS="connected"
+  DEV="HDMI2"
+  DEVC="HDMI-A-2"
+fi
+
+if [[ "${STATUS}" = "disconnected" ]]; then
+  xrandr --output ${DEV_EDP1} --mode 1920x1080
+else
+  edid=$(/usr/bin/cat /sys/class/drm/card0/card0-${DEVC}/edid | /usr/bin/sha512sum - | /usr/bin/sed 's/\s*-$//')
+
+  case "${edid}" in
+    "e824fa3c8375bd225252cdf539a6857f74b14ac6df924d22b523f6c8ec8a1749737b415b8c9718119a4483dcce9882991f3fa49e61893540cbdd7f1efc909668")
+      pos="primary --left-of"
+      ;;
+    "d1bfd6e44c3d9f14d564a05eb67a4041dd2573e7d6d2314d6128919a9fe78c854a952527977b800046d500661ee5765286b1f7c3db233f84c85690b40dfc5fa3")
+      pos="primary --above"
+      ;;
+  esac
+
+  xrandr --output ${DEV_EDP1} --mode 1920x1080 --output $DEV --$pos ${DEV_EDP1} --dpi 96 --auto
+fi
+
+# Set the screen wallpaper if the file exists.
+if [ -f ~/Pictures/Wallpapers/snowy_lake.jpg ]; then
+  feh --bg-scale ~/Pictures/Wallpapers/snowy_lake.jpg
+fi
+
+# Restart i3 to fix polybar.
+# i3-msg restart
+sudo -E -u jrobinson env HOME=~jrobinson ~jrobinson/.config/polybar/launch.sh
