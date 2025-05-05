@@ -1,15 +1,18 @@
 {
-    "workbench.colorTheme": "Red",
+    "workbench.colorTheme": "Material Theme Ocean High Contrast",
     "editor.fontSize": 10,
     "editor.formatOnSave": true,
     "editor.minimap.renderCharacters": false,
     "editor.rulers": [
         80
     ],
-    "window.zoomLevel": 0,
     "terminal.integrated.shell.linux": "/bin/zsh",
     "terminal.integrated.shell.osx": "/bin/zsh",
     "telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false,
-    "editor.minimap.enabled": true
+    "editor.minimap.enabled": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.iconTheme": "material-icon-theme",
+    "latex-workshop.view.pdf.viewer": "tab",
+    "window.zoomLevel": 1
 }
