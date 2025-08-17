@@ -8,11 +8,18 @@
     ],
     "terminal.integrated.shell.linux": "/bin/zsh",
     "terminal.integrated.shell.osx": "/bin/zsh",
-    "telemetry.enableTelemetry": false,
-    "telemetry.enableCrashReporter": false,
+    // "telemetry.enableTelemetry": false,
+    // "telemetry.enableCrashReporter": false,
+    "telemetry.telemetryLevel": "off",
     "editor.minimap.enabled": true,
     "workbench.startupEditor": "newUntitledFile",
     "workbench.iconTheme": "material-icon-theme",
-    "latex-workshop.view.pdf.viewer": "tab",
-    "window.zoomLevel": 1
+    // "latex-workshop.view.pdf.viewer": "tab",
+    "window.zoomLevel": 1,
+    "vim.handleKeys": {
+        "<C-d>": true,
+        "<C-s>": false,
+        "<C-z>": false,
+        "<C-p>": false,
+    }
 }
