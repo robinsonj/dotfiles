@@ -83,9 +83,9 @@ alias think='tickle +1d'
 
 ### Aliases
 # Slightly more informative 'ls.'
-if exa_loc="$(type -p "exa")" || [[ -z ${exa_loc} ]]; then
+if exa_loc="$(type -p "eza")" || [[ -z ${exa_loc} ]]; then
   # exa replacement for ls - https://github.com/ogham/exa
-  alias ls="exa --color always"
+  alias ls="eza --color always"
   alias ll="ls --long --group --header --links --all --classify"
 else
   if [ `uname` = "Darwin" ]; then
